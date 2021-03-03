@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     public bool isGrounded = false;
     public float playerSpeed = 5f;
     public GameObject gameOverText;
-
+    
     Rigidbody2D myRigidbody;
     // Start is called before the first frame update
     void Start()
@@ -23,11 +23,12 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(Vector2.right * (Time.deltaTime * playerSpeed));
+        transform.Translate(Vector2.right * (Time.deltaTime * playerSpeed));
     } 
 
     void FixedUpdate()
     {
+        
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             myRigidbody.AddForce(Vector3.up * (jumpPower * myRigidbody.mass * myRigidbody.gravityScale * 20.0f));
