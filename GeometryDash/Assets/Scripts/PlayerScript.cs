@@ -92,6 +92,6 @@ public class PlayerScript : MonoBehaviour
     {
         gameOverText.SetActive(true);
         gameObject.SetActive(false);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
