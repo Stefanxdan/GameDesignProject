@@ -11,7 +11,7 @@ Ne vom gandi daca lasam playerul sa-si seteze propria viteza de deplasare sau va
 Ne gandim de asemenea daca modelul controlat de jucator va fi in diferite forme sau una singur.
 Poate gandim si un sistem de recompense la finalul nivelului. Detaliile le vom stabili pe parcurs.
 
-Saptamana 1 : Amandoi am lucrat la player movement, la cum sa construim nivelul si la setarea inamicilor principal cat si a reluarea nivelului imediat dupa ce playerul atinge un inamic.
+Saptamana 1 : Amandoi am lucrat la player movement, la cum sa construim nivelul si la setarea inamicilor principali cat si la reluarea nivelului imediat dupa ce playerul atinge un inamic.
 
 
 Saptamana 2: Am prezentat la laborator Core-ul jocului nostru. Acesta poate fi vazut in folderul build. Astfel am creat primul si al doilea nivel si am invatat cum se folosesc TileSeturi si TilePallet pentru a desena aceste nivele. Jocul se reia de fiecare data cand mori dar nu are momentan un EndPoint.
