@@ -55,6 +55,10 @@ public class PlayerScript : MonoBehaviour
             transform.Rotate(Vector3.back * rotation_speed);
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
         //if (rb.velocity.x != 7 && rb.velocity.x != 0)
         //    GameOver();
 
@@ -71,7 +75,12 @@ public class PlayerScript : MonoBehaviour
         {
             GameOver();
         }
+
+        if (other.collider.tag == "Finish")
+            LoadSceneMainMenu();
+            
     }
+
 
     void OnCollisionStay2D(Collision2D other)
     {
@@ -93,5 +102,10 @@ public class PlayerScript : MonoBehaviour
         gameOverText.SetActive(true);
         gameObject.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void LoadSceneMainMenu()
+    {
+        SceneManager.LoadScene(3);
     }
 }
