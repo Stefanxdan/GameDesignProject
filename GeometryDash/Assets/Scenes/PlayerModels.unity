@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 173398961}
   - component: {fileID: 173398963}
   - component: {fileID: 173398962}
+  - component: {fileID: 173398964}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -182,10 +183,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d02699ff25e2640b8d36435293d3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &173398964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173398960}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e9c44cd31cd3a4e831c88962130141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrounded: 0
+  jumpPower: 10
+  playerSpeed: 5
+  rotation_speed: 5
   Image1: {fileID: 21300000, guid: 5895ee93814ca974ba03c104dc7239db, type: 3}
   Image2: {fileID: 21300000, guid: 209b7d2f74e379a418147254fdfe434d, type: 3}
-  findPlayer: {fileID: 2694336982488290119, guid: a0cd91a2f2ace8a44878b4c95ea5cc84,
-    type: 3}
+  imageName: player1
 --- !u!1 &531341538
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,14 +780,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 173398963}
-        m_MethodName: SetCharacter
+        m_MethodName: ChangeImageName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: player
+          m_StringArgument: player1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1579088685
@@ -987,14 +1003,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 173398963}
-        m_MethodName: SetCharacter
+        m_MethodName: ChangeImageName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Player2
+          m_StringArgument: player2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1756723171

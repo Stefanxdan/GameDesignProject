@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,6 +30,7 @@ public class Manager : MonoBehaviour
 
     public void LoadSceneMainMenu()
     {
+        //Debug.Log("Change to MainMenu" );
         SceneManager.LoadScene(0);
     }
     

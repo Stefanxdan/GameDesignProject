@@ -5620,7 +5620,9 @@ MonoBehaviour:
   jumpPower: 7
   playerSpeed: 9
   rotation_speed: 5
-  gameOverText: {fileID: 1283667335}
+  Image1: {fileID: 21300000, guid: 5895ee93814ca974ba03c104dc7239db, type: 3}
+  Image2: {fileID: 21300000, guid: 209b7d2f74e379a418147254fdfe434d, type: 3}
+  imageName: player1
 --- !u!61 &1501746698
 BoxCollider2D:
   m_ObjectHideFlags: 0

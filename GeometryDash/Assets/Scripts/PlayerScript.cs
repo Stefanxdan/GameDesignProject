@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,16 +13,34 @@ public class PlayerScript : MonoBehaviour
     public float jumpPower = 10.0f;
     public float playerSpeed = 5f;
     public float rotation_speed = 5f;
-    public GameObject gameOverText;
+
+    public Sprite Image1 ;
+    public Sprite Image2 ;
+
+    public string imageName = "player1";
+    
 
 
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        gameOverText.SetActive(false);
         rb = transform.GetComponent<Rigidbody2D>();
+        string path = Application.dataPath + "/playerImageName.txt";
+        if(!File.Exists(path))
+        {
+           // Debug.Log("Nu exista fisierul");
+        }
+        else
+        {
+
+           // Debug.Log("Continut fisier: " + File.ReadAllText(path));
+            imageName = File.ReadAllText(path);
+        }
+
+        SetCharacter(imageName);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -32,7 +51,7 @@ public class PlayerScript : MonoBehaviour
     void FixedUpdate()
     {
         //if(rb.velocity.magnitude < 1 && rb.velocity.magnitude > 0)
-        //    Debug.Log(rb.velocity.magnitude );
+        //   // Debug.Log(rb.velocity.magnitude );
 
         //if (Input.GetKey(KeyCode.Space) && isGrounded && rb.velocity.magnitude == 0)
         //{
@@ -101,7 +120,6 @@ public class PlayerScript : MonoBehaviour
 
     void GameOver()
     {
-        gameOverText.SetActive(true);
         gameObject.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -110,4 +128,20 @@ public class PlayerScript : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+
+    public void SetCharacter(string ImageName)
+    {
+        if (ImageName == "player1")
+        {
+           // Debug.Log("Set to " + Image1.name);
+            GetComponent<SpriteRenderer>().sprite = Image1;
+        }
+        else
+        {
+           // Debug.Log("Set to " + Image1.name);
+            GetComponent<SpriteRenderer>().sprite = Image2;
+        }
+    }
+
 }
