@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -12,13 +14,13 @@ public class PlayerScript : MonoBehaviour
     public float rotation_speed = 5f;
     public GameObject gameOverText;
 
+
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         gameOverText.SetActive(false);
         rb = transform.GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame
