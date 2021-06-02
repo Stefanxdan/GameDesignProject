@@ -392,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.271211, y: -2.7983997, z: -9}
+  m_LocalPosition: {x: -14.5, y: -3.3, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2459,22 +2459,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
+  m_LookaheadTime: 0.5
+  m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0
-  m_YDamping: 20
-  m_ZDamping: 0
-  m_TargetMovementOnly: 0
-  m_ScreenX: 0.39999998
-  m_ScreenY: 0.54
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 2
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneHeight: 0.1
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.5
+  m_SoftZoneHeight: 0.35
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -3097,6 +3097,7 @@ MonoBehaviour:
   rotation_speed: 4
   Image1: {fileID: 21300000, guid: 5895ee93814ca974ba03c104dc7239db, type: 3}
   Image2: {fileID: 21300000, guid: 209b7d2f74e379a418147254fdfe434d, type: 3}
+  gameOverText: {fileID: 21707899}
   imageName: player1
 --- !u!1 &1402669320
 GameObject:
@@ -3199,7 +3200,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 1386924352}
   m_Follow: {fileID: 1386924352}
   m_Lens:
     FieldOfView: 60
@@ -3224,7 +3225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631939832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.271211, y: -2.7983997, z: -9}
+  m_LocalPosition: {x: -14.5, y: -3.3, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 737211406}

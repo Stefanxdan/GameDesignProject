@@ -17,6 +17,9 @@ public class PlayerScript : MonoBehaviour
     public Sprite Image1 ;
     public Sprite Image2 ;
 
+    public GameObject gameOverText;
+
+
     public string imageName = "player1";
     
 
@@ -25,6 +28,8 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameOverText.SetActive(false);
+
         rb = transform.GetComponent<Rigidbody2D>();
         string path = Application.dataPath + "/playerImageName.txt";
         if(!File.Exists(path))
@@ -120,6 +125,7 @@ public class PlayerScript : MonoBehaviour
 
     void GameOver()
     {
+        gameOverText.SetActive(true);
         gameObject.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
