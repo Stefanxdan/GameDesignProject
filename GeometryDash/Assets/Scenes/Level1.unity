@@ -392,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.270666, y: -2.7983997, z: -9}
+  m_LocalPosition: {x: -12.271211, y: -2.7983997, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3095,9 +3095,9 @@ MonoBehaviour:
   jumpPower: 7
   playerSpeed: 7
   rotation_speed: 4
-  gameOverText: {fileID: 21707899}
   Image1: {fileID: 21300000, guid: 5895ee93814ca974ba03c104dc7239db, type: 3}
   Image2: {fileID: 21300000, guid: 209b7d2f74e379a418147254fdfe434d, type: 3}
+  imageName: player1
 --- !u!1 &1402669320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,7 +3224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631939832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.270666, y: -2.7983997, z: -9}
+  m_LocalPosition: {x: -12.271211, y: -2.7983997, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 737211406}

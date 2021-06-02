@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 148929195
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5895ee93814ca974ba03c104dc7239db, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &2694336982488290116
@@ -147,4 +147,5 @@ MonoBehaviour:
   jumpPower: 8
   playerSpeed: 10
   rotation_speed: 4
-  gameOverText: {fileID: 0}
+  Image1: {fileID: 0}
+  Image2: {fileID: 0}

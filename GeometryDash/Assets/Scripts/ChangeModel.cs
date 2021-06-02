@@ -1,12 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class ChangeModel : MonoBehaviour
 {
-    public Sprite Image1;
-    public Sprite Image2;
-    public GameObject findPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +18,20 @@ public class ChangeModel : MonoBehaviour
     {
         
     }
-    public void SetCharacter(string ImageName)
+
+    public void ChangeImageName(string ImageName)
     {
-        if (ImageName == "player")
-            findPlayer.GetComponent<SpriteRenderer>().sprite = Image1;
+        string path = Application.dataPath + "/playerImageName.txt";
+       // Debug.Log(path);
+        if (!File.Exists(path))
+        {
+           // Debug.Log("Nu exista fisierul");
+        }
         else
-            findPlayer.GetComponent<SpriteRenderer>().sprite = Image2;
+        {
+
+           // Debug.Log("Suprascriu fisier cu: " + ImageName);
+            File.WriteAllText(path, ImageName);
+        }
     }
 }
