@@ -31,7 +31,7 @@ public class PlayerScript : MonoBehaviour
         gameOverText.SetActive(false);
 
         rb = transform.GetComponent<Rigidbody2D>();
-        string path = Application.dataPath + "/playerImageName.txt";
+        string path ="D:/Facultate/GD/GameDesignProject/GeometryDash/playerImageName.txt";
         if(!File.Exists(path))
         {
            // Debug.Log("Nu exista fisierul");

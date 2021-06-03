@@ -1346,4 +1346,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level3.unity
   - Assets/Scenes/Level 5.unity
   - Assets/Scenes/Level4.unity
-  playerPath: D:/Facultate/GD/GameDesignProject/GeometryDash/FinalBuild/GeometryDash.exe
+  playerPath: D:/Facultate/GD/GameDesignProject/GeometryDash/FinalBuild2/GeometryDash.exe

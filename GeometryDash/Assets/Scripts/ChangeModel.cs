@@ -21,8 +21,8 @@ public class ChangeModel : MonoBehaviour
 
     public void ChangeImageName(string ImageName)
     {
-        string path = Application.dataPath + "/playerImageName.txt";
-       // Debug.Log(path);
+        string path = "D:/Facultate/GD/GameDesignProject/GeometryDash/playerImageName.txt";
+        // Debug.Log(path);
         if (!File.Exists(path))
         {
            // Debug.Log("Nu exista fisierul");
